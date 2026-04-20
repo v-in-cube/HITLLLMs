@@ -1,5 +1,5 @@
 ## Description
-This repo contains supporting code (mostly statistical analysis) and raw feedback materials for the paper "Do humans and large language models agree on the quality of synthesis plans?". All of the analysis on comparing human experts' feedback and LLMs' feedback is in the [human_vs_llm.ipynb](https://github.com/v-in-cube/HITLLLMs/blob/main/human_vs_llm.ipynb) file. Also this repo contains raw human experts and LLMs reponses on the retrosynthetic trees of our interest.\
+This repo contains supporting code (mostly statistical analysis) and raw feedback materials for the preprint ["Do humans and large language models agree on the quality of synthesis plans?"](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001730/v2). All of the analysis on comparing human experts' feedback and LLMs' feedback is in the [human_vs_llm.ipynb](https://github.com/v-in-cube/HITLLLMs/blob/main/human_vs_llm.ipynb) file. Also this repo contains raw human experts and LLMs reponses on the retrosynthetic trees of our interest.\
 \
 The plots for the paper can be re-generated from scratch with [human_vs_llm.ipynb](https://github.com/v-in-cube/HITLLLMs/blob/main/human_vs_llm.ipynb) file.\
 \
