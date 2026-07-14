@@ -114,7 +114,7 @@ def get_fresh_llm(llm_name):
     elif llm_name=="gpto3":
         return ChatOpenAI(model="o3")
     
-for llm in ["gpt4.1", "claude", "gemini", "gpto3"]:
+for llm_name in ["gpt4.1", "claude", "gemini", "gpto3"]:
     llm_response_2 = []
     for i in range(50): #iterating over 50 retrosynthetic paths
         llm_response_j=[]
@@ -130,7 +130,7 @@ for llm in ["gpt4.1", "claude", "gemini", "gpto3"]:
                     test_input
                     )
             ]
-            llm = get_fresh_llm()
+            llm = get_fresh_llm(llm_name)
             ai_msg = llm.invoke(prompt)
             response = ai_msg.content
             llm_response_2.append(response)
