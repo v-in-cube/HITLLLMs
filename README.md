@@ -14,9 +14,9 @@ Human expert and LLM feedback on 50 retrosynthetic routes (204 reactions) is com
 
 ## Analysis notebooks
 
-Run `nb1_setup.ipynb` first — it defines all shared classes and functions used by the other notebooks.
+Run `nb1_setup.ipynb` first to define all shared classes and functions used by the other notebooks.
 
-### [`nb1_setup.ipynb`](nb1_setup.ipynb) — Definitions
+### [`nb1_setup.ipynb`](nb1_setup.ipynb) - Definitions
 Imports, category mappings, and consensus/voting logic (pessimistic majority vote with tie-breaking).
 
 ### [`nb2_primary_analysis.ipynb`](nb2_primary_analysis.ipynb) - Primary statistical analysis
