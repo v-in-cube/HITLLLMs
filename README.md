@@ -19,14 +19,16 @@ Run `nb1_setup.ipynb` first — it defines all shared classes and functions used
 ### [`nb1_setup.ipynb`](nb1_setup.ipynb) — Definitions
 Imports, category mappings, and consensus/voting logic (pessimistic majority vote with tie-breaking).
 
-### [`nb2_primary_analysis.ipynb`](nb2_primary_analysis.ipynb) — Primary statistical analysis
+### [`nb2_primary_analysis.ipynb`](nb2_primary_analysis.ipynb) - Primary statistical analysis
 Per-repeat MCC with bootstrap CI and exact pairwise permutation tests; inter-LLM Cohen's kappa averaged across repeats; confidence calibration analysis (error clustering vs reaction difficulty).
 
-### [`nb3_human_vs_llm_comparison.ipynb`](nb3_human_vs_llm_comparison.ipynb) — Human vs LLM comparison
+### [`nb3_human_vs_llm_comparison.ipynb`](nb3_human_vs_llm_comparison.ipynb) - Human vs LLM comparison
 Averaged TP/FP/TN/FN confusion matrices (raw counts and row-normalised rates); full category-level confusion matrices.
 
-### [`nb4_distributions_consistency.ipynb`](nb4_distributions_consistency.ipynb) — Distributions and internal consistency
+### [`nb4_distributions_consistency.ipynb`](nb4_distributions_consistency.ipynb) - Distributions and internal consistency
 Category distributions per LLM vs human baseline (all repeats pooled); internal consistency (agreement levels across 4 reruns, averaged across repeats ± SD) including human expert consistency as reference.
+### [`fetch_llm_comments.ipynb`](fetch_llm_comments.ipynb) - Reactions with disagreement
+Just pure dataframes read-throught the raw commentary of LLMs on the presented examples in the paper.
 
 ---
 
