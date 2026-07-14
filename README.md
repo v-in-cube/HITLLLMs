@@ -23,7 +23,7 @@ Imports, category mappings, and consensus/voting logic (pessimistic majority vot
 Per-repeat MCC with bootstrap CI and exact pairwise permutation tests; inter-LLM Cohen's kappa averaged across repeats; confidence calibration analysis (error clustering vs reaction difficulty).
 
 ### [`nb3_human_vs_llm_comparison.ipynb`](nb3_human_vs_llm_comparison.ipynb) — Human vs LLM comparison
-Averaged TP/FP/TN/FN confusion matrices (raw counts and row-normalised rates); full category-level confusion matrices; all comparisons use repeat=0 for symmetry with human expert pool size.
+Averaged TP/FP/TN/FN confusion matrices (raw counts and row-normalised rates); full category-level confusion matrices.
 
 ### [`nb4_distributions_consistency.ipynb`](nb4_distributions_consistency.ipynb) — Distributions and internal consistency
 Category distributions per LLM vs human baseline (all repeats pooled); internal consistency (agreement levels across 4 reruns, averaged across repeats ± SD) including human expert consistency as reference.
