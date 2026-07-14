@@ -1,0 +1,13 @@
+{
+  "model_short_name": "llama31_70b",
+  "model_id": "us.meta.llama3-1-70b-instruct-v1:0",
+  "provider": "Amazon Bedrock via AI Gateway",
+  "gateway_endpoint": "https://xxx/bedrock",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "n_routes": 50,
+  "n_reruns_per_route": 4,
+  "n_repeats": 4,
+  "total_responses": 800,
+  "run_date": "2026-06-30"
+}

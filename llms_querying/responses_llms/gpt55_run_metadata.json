@@ -1,0 +1,12 @@
+{
+  "model_short_name": "gpt55",
+  "model_id": "gpt-5.5",
+  "provider": "OpenAI via AI Gateway",
+  "gateway_endpoint": "https://xxx/openai",
+  "temperature": 1.0,
+  "n_routes": 50,
+  "n_reruns_per_route": 4,
+  "n_repeats": 4,
+  "total_responses": 800,
+  "run_date": "2026-06-30"
+}

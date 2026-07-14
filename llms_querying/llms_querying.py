@@ -132,21 +132,25 @@ for llm_name in ["gpt4.1", "claude", "gemini", "gpto3"]:
             ]
             llm = get_fresh_llm(llm_name)
             ai_msg = llm.invoke(prompt)
+            llm_instance = get_fresh_llm(llm)
+            ai_msg = llm_instance.invoke(prompt)
             response = ai_msg.content
             llm_response_2.append(response)
             llm_response_j.append(response)
-        with open(f"{llm}_repeated_response_{i}.json", 'w') as f:
-            json.dump(llm_response_j, f)    
-    with open(f"{llm}_repeated_response_all.json", 'w') as f:
+        with open(f"responses_llms/{llm}_repeated_response_{i}.json", 'w') as f:
+            json.dump(llm_response_j, f)
+    with open(f"responses_llms/{llm}_repeated_response_all.json", 'w') as f:
         json.dump(llm_response_2, f)
 
 
 llm_response = []
 for i in range(50):
-   with open(f"{llm}_repeated_response_{i}.json", 'r') as f:
+   with open(f"responses_llms/{llm}_repeated_response_{i}.json", 'r') as f:
         r = json.load(f)
         for string in r:
          clean_json = re.sub(r'^```json\n|\n```$', '', string, flags=re.MULTILINE)
          llm_response.append(clean_json)
 with open(f"{llm}_repeated_response_all.json", 'w') as f:
+    json.dump(llm_response, f)
+with open(f"responses_llms/{llm}_repeated_response_all.json", 'w') as f:
     json.dump(llm_response, f)
