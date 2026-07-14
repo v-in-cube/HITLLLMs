@@ -47,3 +47,4 @@ calibration_all_repeats_option_B.csv
 # Jupyter checkpoints
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
+*.sh
