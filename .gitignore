@@ -48,3 +48,6 @@ calibration_all_repeats_option_B.csv
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 *.sh
+human_vs_llm.ipynb
+human_vs_llm_new_llms.ipynb
+expert_feedback_combined_llms.csv
