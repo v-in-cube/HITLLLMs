@@ -16,7 +16,7 @@ gateway_url = os.getenv("AI_GATEWAY_URL")
 api_key = os.getenv("AI_GATEWAY_KEY")
 if not gateway_url or not api_key:
     env = dotenv_values("../.env")
-    gateway_url = gateway_url or env.get("AI_GATEWAY_URL") or "https://ai-gateway.astrazeneca.net"
+    gateway_url = gateway_url or env.get("AI_GATEWAY_URL")
     api_key = api_key or env.get("AI_GATEWAY_KEY")
 if not gateway_url or not api_key:
     raise ValueError("AI_GATEWAY_URL and AI_GATEWAY_KEY must be set")
